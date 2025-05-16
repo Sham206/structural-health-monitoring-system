@@ -1,8 +1,21 @@
-Project Summary
-This project simulates a Structural Health Monitoring system that uses sensor data and machine learning to detect potential damage
-in structures. By analyzing vibration, strain, displacement, temperature, and humidity data, the system predicts damage risks 
-and provides real-time alerts. It helps improve maintenance decisions and prevents structural failures.
 
-Languages Used
-Front end : HTML, CSS
-Backend : Python (Flask, scikit-learn, pandas, numpy, matplotlib)
+Structural Health Monitoring (SHM) System is an intelligent platform designed to simulate, detect, and predict structural damage using sensor data and machine learning. It leverages vibration, strain, displacement, temperature, and humidity readings to assess the health of structures, providing real-time alerts to support preventive maintenance and enhance safety.
+
+Overview
+
+This project aims to improve structural safety by:
+
+Generating synthetic sensor data representing real-world conditions
+
+Simulating damage risk based on combined sensor metrics
+
+Using machine learning (Random Forest) to classify damage status
+
+Providing visual insights into feature importance for the model
+
+Offering a simple web interface for interaction and real-time damage prediction
+
+Languages Used:
+
+Front End : HTML, CSS
+Backend : Python
