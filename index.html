@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Structural Health Monitoring Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Structural Health Monitoring System</h1>
+        <form action="/predict" method="post">
+            <label>Vibration:</label>
+            <input type="number" name="vibration" step="0.01" required><br>
+
+            <label>Strain:</label>
+            <input type="number" name="strain" step="0.01" required><br>
+
+            <label>Displacement:</label>
+            <input type="number" name="displacement" step="0.01" required><br>
+
+            <label>Temperature (°C):</label>
+            <input type="number" name="temperature" step="0.1" required><br>
+
+            <label>Humidity (%):</label>
+            <input type="number" name="humidity" step="0.1" required><br>
+
+            <button type="submit">Check for Damage</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2>{{ result }}</h2>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
